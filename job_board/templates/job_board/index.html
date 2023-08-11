@@ -1,3 +1,5 @@
+{% load humanize %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,5 +9,12 @@
 </head>
 <body>
   <h1>Job board working</h1>
+  <ul>
+  {% for job in job_postings %}
+  <a href="{% url 'job-detail' job.id %}">
+    <li>{{ job.title | title }} | {{ job.company }} | {{ job.salary | intcomma }}</li>
+  </a>
+  {% endfor %}
+  </ul>
 </body>
 </html>

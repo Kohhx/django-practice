@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Extra Django Packages
+    'django.contrib.humanize',
+
     # Add your apps here
     'my_app',
     'movies',
