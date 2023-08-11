@@ -1,0 +1,17 @@
+{% extends 'movies/_base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% block content %}
+    <h1 style="margin-bottom: 20px;">My About page</h1>
+    <img src="{% static 'movies/Bleach.jpg' %}" width="300px" alt="Bleach" />
+    {% endblock %}
+  </body>
+</html>
